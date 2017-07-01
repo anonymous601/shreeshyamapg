@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Shree Shyama Chhatravas </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" >
+  <link rel = "stylesheet" href="style.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  
+
+  <script src="nav-icon.js"></script>
+</head>
+
+<body>
+<h1 class= 'head'>Shree Shyama Chhatravas </h1>
+<nav class="clearfix">
+  <ul class="clearfix">
+    <li><a href="index.html">About Us</a></li>
+    <li><a href="facilities.html">Facilities</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+    <li><a href="booknow.html">Book Now!</a></li>  
+  </ul>
+  <a href="#" id="pull">Menu</a>
+</nav>
+
+<h2>Contact Us!</h2>
+<div style ="float:left;margin:20px;">
+	<em>Owner</em> - Bhupesh Kansal :
+     9899971235, <br>
+	 9312235126
+    <br>
+    <em>Manager </em>- Hari Shankar :
+     9811407758
+    <br>
+    Shree Shyama Chatravas
+    Plot no. 13A,<br> Main Bawana Road,<br> Opp. Amar jyoti colony gate no. 2 <br>
+   (Near Delhi Technological University)<br>
+    Rohini sector 17
+	</div>
+
+<div id = "map" >
+ </div>
+<script>
+      function initMap() {
+        var uluru = {lat:28.744300, lng:77.119368 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJmjaPBvlTUB9IxWxPQ9mZS_V9zpRK8wk&callback=initMap">
+    </script>
+
+
+</body>
+</html>
